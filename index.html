@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VapeHub Nigeria | Premium Vapes & E-Liquids</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <a href="#" class="logo">Vape<span>Hub</span></a>
+
+                    <div class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-actions">
+                        <div class="wishlist-icon">
+                            <i class="far fa-heart"></i>
+                            <span class="wishlist-count">0</span>
+                        </div>
+                        <div class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Carousel -->
+        <section class="hero">
+            <div class="carousel">
+                <div
+                    class="carousel-slide active"
+                    style="
+                        background-image:
+                            linear-gradient(
+                                rgba(0, 0, 0, 0.5),
+                                rgba(0, 0, 0, 0.5)
+                            ),
+                            url(&quot;https://images.unsplash.com/photo-1604908550667-1fa5a738c937?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80&quot;);
+                    "
+                >
+                    <div class="slide-content">
+                        <h2>Premium Vaping Experience</h2>
+                        <p>
+                            Discover our collection of high-quality vapes and
+                            e-liquids for the ultimate satisfaction.
+                        </p>
+                        <a href="#products" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+                <div
+                    class="carousel-slide"
+                    style="
+                        background-image:
+                            linear-gradient(
+                                rgba(0, 0, 0, 0.5),
+                                rgba(0, 0, 0, 0.5)
+                            ),
+                            url(&quot;https://images.unsplash.com/photo-1573302094611-500c19b9fe6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80&quot;);
+                    "
+                >
+                    <div class="slide-content">
+                        <h2>Long-Lasting Performance</h2>
+                        <p>
+                            Get up to 5000 puffs with our premium disposable
+                            vapes. No charging, no refilling.
+                        </p>
+                        <a href="#products" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+                <div
+                    class="carousel-slide"
+                    style="
+                        background-image:
+                            linear-gradient(
+                                rgba(0, 0, 0, 0.5),
+                                rgba(0, 0, 0, 0.5)
+                            ),
+                            url(&quot;https://images.unsplash.com/photo-1603712610496-5362a5d0c6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80&quot;);
+                    "
+                >
+                    <div class="slide-content">
+                        <h2>Exquisite Flavors</h2>
+                        <p>
+                            From fruity to dessert flavors, find your perfect
+                            match in our extensive collection.
+                        </p>
+                        <a href="#products" class="btn btn-primary"
+                            >Discover Flavors</a
+                        >
+                    </div>
+                </div>
+
+                <div class="carousel-indicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Products</h2>
+                </div>
+
+                <div class="category-tabs">
+                    <div class="category-tab active" data-category="all">
+                        All Products
+                    </div>
+                    <div class="category-tab" data-category="1500">
+                        Up to 1500 Puffs
+                    </div>
+                    <div class="category-tab" data-category="3000">
+                        1500 - 3000 Puffs
+                    </div>
+                    <div class="category-tab" data-category="5000">
+                        3000 - 5000 Puffs
+                    </div>
+                    <div class="category-tab" data-category="5000+">
+                        5000+ Puffs
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Products will be dynamically generated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Sidebar -->
+        <div class="sidebar cart-sidebar">
+            <div class="sidebar-header">
+                <h3 class="sidebar-title">Your Cart</h3>
+                <div class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <!-- Cart items will be dynamically generated here -->
+                <div class="empty-message">
+                    <i
+                        class="fas fa-shopping-cart fa-2x"
+                        style="margin-bottom: 15px"
+                    ></i>
+                    <p>Your cart is empty</p>
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <div class="subtotal">
+                    <span>Subtotal:</span>
+                    <span class="subtotal-price">₦0.00</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+
+        <!-- Wishlist Sidebar -->
+        <div class="sidebar wishlist-sidebar">
+            <div class="sidebar-header">
+                <h3 class="sidebar-title">Your Wishlist</h3>
+                <div class="close-sidebar">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <!-- Wishlist items will be dynamically generated here -->
+                <div class="empty-message">
+                    <i
+                        class="far fa-heart fa-2x"
+                        style="margin-bottom: 15px"
+                    ></i>
+                    <p>Your wishlist is empty</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay"></div>
+
+        <!-- Checkout Modal -->
+        <div class="modal checkout-modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Checkout</h3>
+                <div class="close-modal">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="modal-body">
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email"
+                            >Email Address</label
+                        >
+                        <input
+                            type="email"
+                            id="email"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="phone"
+                            >Phone Number</label
+                        >
+                        <input
+                            type="tel"
+                            id="phone"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="address"
+                            >Delivery Address</label
+                        >
+                        <textarea
+                            id="address"
+                            class="form-control"
+                            rows="3"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="payment-info">
+                        <h3>Payment Method: Bank Transfer</h3>
+                        <div class="bank-details">
+                            <p><strong>Bank Name:</strong> Zenith Bank</p>
+                            <p>
+                                <strong>Account Name:</strong> VapeHub Nigeria
+                                Ltd
+                            </p>
+                            <p><strong>Account Number:</strong> 1234567890</p>
+                        </div>
+                        <p>
+                            Please transfer the exact amount to the account
+                            above and include your order ID as the payment
+                            reference.
+                        </p>
+                    </div>
+
+                    <div class="order-summary">
+                        <h3>Order Summary</h3>
+                        <!-- Order items will be dynamically generated here -->
+                        <div class="order-total">
+                            <span>Total:</span>
+                            <span class="order-total-price">₦0.00</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="confirm-order">
+                        Confirm Order
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-column">
+                        <h3>VapeHub</h3>
+                        <p>
+                            Your premier destination for premium vaping products
+                            in Nigeria. We offer high-quality vapes, e-liquids,
+                            and accessories.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"
+                                ><i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a href="#" class="social-link"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a href="#" class="social-link"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                            <a href="#" class="social-link"
+                                ><i class="fab fa-whatsapp"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Customer Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Info</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i> 123 Vape
+                                Street, Lagos, Nigeria
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i> +234 812 345 6789
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i> info@vapehub.ng
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 VapeHub Nigeria. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/vape.js"></script>
+    </body>
+</html>

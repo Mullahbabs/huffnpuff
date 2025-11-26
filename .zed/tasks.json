@@ -1,0 +1,15 @@
+[
+  {
+    "label": "Run Live Server",
+    "type": "shell",
+    "command": "npx",
+    "args": ["live-server", "--port=5500", "--open=./"],
+    "presentation": {
+      "reveal": "always",
+      "panel": "shared",
+      "showReuseMessage": true,
+      "clear": false
+    },
+    "problemMatcher": []
+  }
+]
