@@ -5,7 +5,7 @@ const products = [
     name: "Elf Bar 1500",
     category: "1500",
     price: 2500,
-    image: "img/p1.jpg",
+    image: "img/p1.png",
     rating: 4.5,
     description: "Compact disposable vape with 1500 puffs",
   },
@@ -432,7 +432,7 @@ function showNotification(message) {
         position: fixed;
         top: 20px;
         right: 20px;
-        background-color: var(--accent);
+        background-color: var(--secondary);
         color: white;
         padding: 12px 20px;
         border-radius: 4px;
